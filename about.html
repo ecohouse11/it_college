@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас — EcoBuild</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <img src="./img/лого-remove.png" alt="EcoBuild Logo" class="logo-pic">
+        <div class="nav-container">
+            <button class="menu-btn">Меню ▾</button>
+            <div class="dropdown-menu">
+                <a href="index.html">Головна</a>
+                <a href="about.html">Про нас</a>
+                <a href="contacts.html">Контакти</a>
+            </div>
+        </div>
+        <div class="header-contacts">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+            <a href="tel:+380664964283" class="phone-link">+380 66-496-42-83</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Твій ідеальний дім в гармонії з природою</h1>
+        <button class="btn-consult">Отримати консультацію</button>
+    </section>
+
+    <main class="container about-page">
+        <div class="philosophy-text">
+            <p><strong>EcoBuild</strong> — це українська будівельна компанія нового покоління.</p>
+            <p>Наша філософія базується на трьох принципах: абсолютна енергонезалежність, екологічна бездоганність матеріалів та безкомпромісний архітектурний стиль.</p>
+        </div>
+
+        <div class="eco-banner-img">
+            <img src="./img/image 11.png" alt="">
+        </div>
+
+        <div class="detailed-description">
+            <p>У будинках EcoBuild кожна архітектурна форма, природна текстура та технологічні рішення перебувають на своєму місці, підкреслюючи нашу пристрасть до енергоефективності та естетики. Ця архітектура створена для того, аби ваше життя піднялося на принципово новий рівень — рівень свідомого затишку, якого ви варті.</p>
+            <p>Те, що здавалося статтю з майбутнього, ми будуємо просто зараз. Натуральні матеріали, велика кількість природного світла та раціонально зоновані кімнати роблять дизайн ергономічним, легким для сприйняття та екологічно безпечним. А довершеність інженерних систем та технології теплозбереження ставлять фінансову крапку у цьому безкінечному двобої високих технологій та природної чистоти.</p>
+        </div>
+
+        <section class="how-we-work">
+            <h3 class="section-title">Як ми працюємо?</h3>
+            
+            <div class="work-step">
+                <div class="step-icon">🌳</div>
+                <div class="step-content">
+                    <p><strong>Турбота про здоров'я:</strong> Ми категорично не використовуємо токсичні чи дешеві пластикові замінники. Тільки дерево, камінь, безпечні утеплювачі та глина.</p>
+                </div>
+            </div>
+
+            <div class="work-step">
+                <div class="step-icon">🌳</div>
+                <div class="step-content">
+                    <p><strong>Енергетична незалежність:</strong> Кожен наш об'єкт готовий до інтеграції сонячних панелей, теплових насосів та автономних систем рекуперації повітря. Твоя оселя захищена від будь-яких зовнішніх криз.</p>
+                </div>
+            </div>
+
+            <div class="work-step">
+                <div class="step-icon">🌳</div>
+                <div class="step-content">
+                    <p><strong>Комплексний сервіс:</strong> Ми беремо на себе все — від дослідження ґрунту та архітектурного креслення до ландшафтного дизайну навколо готової тераси.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-address">
+            <p><strong>Головний офіс</strong></p>
+            <p>вул. Стрийська, 144-А</p>
+        </div>
+        <div class="footer-right">
+            <img src="./img/лого-remove.png" alt="EcoBuild Logo" class="logo-pic">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+            <a href="tel:+380664964283" class="phone-link">+380 66-496-42-83</a>
+        </div>
+    </footer>
+    <div id="consultation-modal" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close-btn">&times;</button>
+            
+            <h2 class="modal-title">Особиста <br>консультація</h2>
+            <p class="modal-subtitle">Наш менеджер зателефонує Вам найближчим часом</p>
+            
+            <form class="modal-form">
+                <div class="input-group">
+                    <input type="text" id="user-name" required placeholder=" ">
+                    <label for="user-name">Ім'я</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="tel" id="user-phone" required placeholder=" ">
+                    <label for="user-phone">Ваш номер телефону</label>
+                </div>
+                
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="contact-method" value="call" checked>
+                        <span class="custom-radio"></span>
+                        Зателефонуйте мені
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="contact-method" value="message">
+                        <span class="custom-radio"></span>
+                        Напишіть мені
+                    </label>
+                </div>
+                
+                <p class="privacy-notice">
+                    Натискаючи кнопку, ви приймаєте політику конфіденційності та даєте згоду на обробку персональних даних
+                </p>
+                
+                <button type="submit" class="btn-submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>

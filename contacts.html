@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти — EcoBuild</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <img src="./img/лого-remove.png" alt="EcoBuild Logo" class="logo-pic">
+        <div class="nav-container">
+            <button class="menu-btn">Меню ▾</button>
+            <div class="dropdown-menu">
+                <a href="index.html">Головна</a>
+                <a href="about.html">Про нас</a>
+                <a href="contacts.html">Контакти</a>
+            </div>
+        </div>
+        <div class="header-contacts">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+            <a href="tel:+380664964283" class="phone-link">+380 66-496-42-83</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Твій ідеальний дім в гармонії з природою</h1>
+        <button class="btn-consult">Отримати консультацію</button>
+    </section>
+
+    <main class="container contacts-page">
+        <h2 class="contacts-title">Зв'яжіться з нами!</h2>
+        <div class="main-phone"><a href="tel:+380664964283">+380 664964283</a></div>
+
+        <div class="contacts-grid">
+            <div class="departments">
+                <div class="dept-block">
+                    <h3>Відділ продажу:</h3>
+                    <p>вул. Стрийська, 144-А</p>
+                    <p><a href="mailto:office@lviv.development.com.ua">office@lviv.development.com.ua</a></p>
+                </div>
+
+                <div class="dept-block">
+                    <h3>Відділ закупівель:</h3>
+                    <p><a href="tel:+380989234458">+380 98 923 44 58</a></p>
+                    <p><a href="mailto:office@lviv.development.com.ua">office@lviv.development.com.ua</a></p>
+                </div>
+            </div>
+
+            <div class="schedule-marketing">
+                <div class="schedule-block">
+                    <p><strong>ПН-ПТ</strong> 9:00 - 18:00</p>
+                    <p><strong>СБ</strong> 10:00 - 15:00</p>
+                    <p><strong>НД</strong> Вихідний</p>
+                </div>
+
+                <div class="dept-block marketing">
+                    <h3>Відділ маркетингу:</h3>
+                    <p><a href="mailto:office@lviv-development.com.ua">office@lviv-development.com.ua</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-section">
+            <span class="map-label">Карта Львова</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.6771343779835!2d24.0203444!3d49.8109315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae83e74ffbb6b%3A0x67ee1c070f6ef3f!2z0LLRg9C70LjRhtGPINCh0YLRgNC40LnRgdGM0LrQsCwgMTQ00Cw!5e0!3m2!1suk!2sua!4v1700000000000!5m2!1suk!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-address">
+            <p><strong>Головний офіс</strong></p>
+            <p>вул. Стрийська, 144-А</p>
+        </div>
+        <div class="footer-right">
+            <img src="./img/лого-remove.png" alt="EcoBuild Logo" class="logo-pic">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+            <a href="tel:+380664964283" class="phone-link">+380 66-496-42-83</a>
+        </div>
+    </footer>
+    <div id="consultation-modal" class="modal-overlay">
+        <div class="modal-window">
+            <button class="modal-close-btn">&times;</button>
+            
+            <h2 class="modal-title">Особиста <br>консультація</h2>
+            <p class="modal-subtitle">Наш менеджер зателефонує Вам найближчим часом</p>
+            
+            <form class="modal-form">
+                <div class="input-group">
+                    <input type="text" id="user-name" required placeholder=" ">
+                    <label for="user-name">Ім'я</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="tel" id="user-phone" required placeholder=" ">
+                    <label for="user-phone">Ваш номер телефону</label>
+                </div>
+                
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="contact-method" value="call" checked>
+                        <span class="custom-radio"></span>
+                        Зателефонуйте мені
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="contact-method" value="message">
+                        <span class="custom-radio"></span>
+                        Напишіть мені
+                    </label>
+                </div>
+                
+                <p class="privacy-notice">
+                    Натискаючи кнопку, ви приймаєте політику конфіденційності та даєте згоду на обробку персональних даних
+                </p>
+                
+                <button type="submit" class="btn-submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+
+<div id="consultation-modal" class="modal-overlay">
+    <div class="modal-window">
+        <button class="modal-close-btn">&times;</button>
+        
+        <h2 class="modal-title">Особиста <br>консультація</h2>
+        <p class="modal-subtitle">Наш менеджер зателефонує Вам найближчим часом</p>
+        
+        <form class="modal-form">
+            <div class="input-group">
+                <input type="text" id="user-name" required placeholder=" ">
+                <label for="user-name">Ім'я</label>
+            </div>
+            
+            <div class="input-group">
+                <input type="tel" id="user-phone" required placeholder=" ">
+                <label for="user-phone">Ваш номер телефону</label>
+            </div>
+            
+            <div class="radio-group">
+                <label class="radio-label">
+                    <input type="radio" name="contact-method" value="call" checked>
+                    <span class="custom-radio"></span>
+                    Зателефонуйте мені
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="contact-method" value="message">
+                    <span class="custom-radio"></span>
+                    Напишіть мені
+                </label>
+            </div>
+            
+            <p class="privacy-notice">
+                Натискаючи кнопку, ви приймаєте політику конфіденційності та даєте згоду на обробку персональних даних
+            </p>
+            
+            <button type="submit" class="btn-submit">Надіслати</button>
+        </form>
+    </div>
+</div>
+
+<script src="./main.js"></script>
+
+</body>
+</html>
